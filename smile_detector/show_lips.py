@@ -5,7 +5,7 @@ from get_features import get_features
 path_test_img = "../data/data_imgs/test_imgs/i064rc-mn.jpg"
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("../data/data_dlib_model/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("../data/dlib/shape_predictor_68_face_landmarks.dat")
 
 
 # get lip's positions of features points
@@ -22,3 +22,7 @@ for i in range(0, len(positions_lip), 2):
 cv2.namedWindow("img_read", 2)
 cv2.imshow("img_read", img_rd)
 cv2.waitKey(0)
+
+
+
+

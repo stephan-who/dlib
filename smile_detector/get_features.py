@@ -32,8 +32,8 @@ def get_features(img_rd):
     return positions_lip_arr
 
 #
-path_images_with_smiles ="../data/data_imgs/database/smiles"
-path_images_no_smiles = "../data/data_imgs/database/no_smiles"
+path_images_with_smiles ="../data/data_imgs/database/smiles/"
+path_images_no_smiles = "../data/data_imgs/database/no_smiles/"
 
 
 #
@@ -41,7 +41,7 @@ imgs_smiles = os.listdir(path_images_with_smiles)
 imgs_no_smiles = os.listdir(path_images_no_smiles)
 
 #
-path_csv = "../data/data_csvs"
+path_csv = "../data/data_csvs/"
 
 
 #write the features into csv
@@ -49,7 +49,7 @@ def write_into_csv():
     with open(path_csv+"data.csv", "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
-        print("######with smiles ##########")
+        print("###### with smiles ##########")
         for i in range(len(imgs_smiles)):
             print(path_images_with_smiles+imgs_smiles[i])
 

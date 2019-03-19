@@ -12,7 +12,7 @@ path_test_img = "../data/data_imgs/test_imgs/test1.jpg"
 positions_lip_test = get_features(path_test_img)
 
 #
-path_models = "../data/data_models"
+path_models = "../data/data_models/"
 
 print("The result of " + path_test_img +":")
 print("\n")
@@ -50,7 +50,7 @@ print("SGDC:", y_predict_SGDC)
 img_test = cv2.imread(path_test_img)
 
 img_height = int(img_test.shape[0])
-img_width = int(img_test.shapep[1])
+img_width = int(img_test.shape[1])
 
 # show the results on the image
 font = cv2.FONT_HERSHEY_SIMPLEX

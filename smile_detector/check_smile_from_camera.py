@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('data/data_dlib_model/shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('../data/dlib/shape_predictor_68_face_landmarks.dat')
 
 # OpenCv 调用摄像头
 cap = cv2.VideoCapture(0)
@@ -48,7 +48,7 @@ while cap.isOpened():
         positions_lip_test = get_features(img_rd)
 
         # path of models
-        path_models = "data/data_models/"
+        path_models = "../data/data_models/"
 
         # #########  LR  ###########
         LR = joblib.load(path_models + "model_LR.m")

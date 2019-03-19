@@ -32,7 +32,7 @@ def pre_data():
     return X_train, X_test, y_train, y_test
 
 
-path_models = "../data/data_models"
+path_models = "../data/data_models/"
 
 
 # LR模型
